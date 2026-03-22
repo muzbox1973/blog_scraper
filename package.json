@@ -1,0 +1,20 @@
+{
+  "name": "naver-blog-top3-scraper",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vercel-ready Next.js app that scrapes the top 3 Naver blog posts for a keyword.",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@sparticuz/chromium": "^123.0.1",
+    "next": "^15.3.0",
+    "playwright": "^1.53.0",
+    "playwright-core": "^1.53.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
