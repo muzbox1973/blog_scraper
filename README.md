@@ -18,7 +18,14 @@ Open `http://localhost:3000`.
 vercel
 ```
 
-For Vercel, set one of these environment variables and use a remote browser:
+For Vercel, use a remote browser. The easiest setup is Browserless.
+
+Recommended Browserless env vars:
+
+- `BROWSERLESS_TOKEN`
+- `BROWSERLESS_REGION=production-sfo`
+
+You can also set one of these directly:
 
 - `PLAYWRIGHT_WS_ENDPOINT`
 - `CHROME_CDP_URL`
@@ -32,4 +39,5 @@ For Vercel, set one of these environment variables and use a remote browser:
 
 - Local development uses `playwright`.
 - Vercel should use a remote browser endpoint because bundled Chromium may fail in serverless environments.
+- Browserless CDP example: `wss://production-sfo.browserless.io?token=YOUR_TOKEN`
 - If Naver changes its DOM structure, selectors may need to be updated.
